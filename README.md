@@ -22,13 +22,29 @@ This repository provides a simple introduction to sentiment analysis using Pytho
 
 ## Usage
 
-Run the sentiment analysis script:
-
+### Lexicon-Based (TextBlob)
 ```
 python sentiment_analysis.py
 ```
+Analyzes sample texts using TextBlob's polarity and subjectivity.
 
-The script will analyze sample texts and print their sentiment polarity and subjectivity.
+### Lexicon-Based (VADER)
+```
+python vader_sentiment.py
+```
+Uses NLTK's VADER for social media-friendly sentiment analysis.
+
+### Machine Learning (SVM with TF-IDF)
+```
+python ml_sentiment.py
+```
+Trains a Support Vector Machine on movie reviews (achieves ~85% accuracy).
+
+### Deep Learning (LSTM)
+```
+python lstm_sentiment.py
+```
+Trains an LSTM neural network for advanced sentiment classification.
 
 ## Example Output
 
